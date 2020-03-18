@@ -1,41 +1,39 @@
 .main {
   height: 100vh;
-    display: flex;
-    color: white;
+  display: flex;
+  color: white;
 }
+
 .leftPanel {
   width: 70%;
- background-image: linear-gradient(
-      rgba(78, 24, 177,0.8),
-      rgba(78, 24, 177, 0.8)
-    ), url('./images/background.jpg');
- background-repeat: no-repeat;
-   background-position: center center;
-
+  background-image: linear-gradient(rgba(78, 24, 177, 0.8),
+      rgba(78, 24, 177, 0.8)), url('./images/background.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
-.leftPanel > .leftPanelContent {
-height: 300px;
-width: 80%;
-transform: translate(-50%, -50%);
-position: relative;
-top: 50%;
-left: 50%;
+.leftPanel>.leftPanelContent {
+  height: 300px;
+  width: 80%;
+  transform: translate(-50%, -50%);
+  position: relative;
+  top: 50%;
+  left: 50%;
 }
 
-.leftPanel > .leftPanelContent > p{
-font-size: 60px;
-word-spacing: 10px;
-margin-bottom: 10px;
+.leftPanel>.leftPanelContent>p {
+  font-size: 60px;
+  word-spacing: 10px;
+  margin-bottom: 10px;
 }
 
-.rightPanel{
+.rightPanel {
   width: 30%;
   background-color: #ffffff;
   overflow: auto;
 }
 
-.rightContent{
+.rightContent {
   width: 70%;
   height: 70%;
   position: relative;
@@ -51,62 +49,65 @@ margin-bottom: 10px;
   text-align: center;
 }
 
-.rightHeader > h4 {
+.rightHeader>h4 {
   font-weight: bold;
   color: #7935CE;
   font-size: 29px;
   margin-bottom: 10px;
 }
 
-.rightHeader > p {
+.rightHeader>p {
   color: #cdccdc;
 }
-.rightBody > input[type=text]  {
+
+.rightBody>input[type=text] {
   width: 100%;
   border-top-style: hidden;
-     border-right-style: hidden;
-     border-left-style: hidden;
-     border-bottom-style: groove;
-     background-color: #eee;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove;
+  background-color: #eee;
   margin-top: 15px;
   background: none;
   padding: 5px;
 }
 
-.rightBody > input[type=text]:focus {
+.rightBody>input[type=text]:focus {
   outline: none;
   border-bottom-color: #7935CE;
 }
 
-.rightBody > input[type=text]:focus::placeholder {
+.rightBody>input[type=text]:focus::placeholder {
   color: #7935CE;
 }
 
-.rightBody  > label {
+.rightBody>label {
   color: black;
 }
 
-.rightBody  > label#termConditions {
+.rightBody>label#termConditions {
   font-weight: bold;
   color: #7935CE;
 }
+
 .buttonGroup {
   margin-top: 10px;
 }
-.buttonGroup > input[type=button] {
+
+.buttonGroup>input[type=button] {
   padding: 7px;
   width: 150px;
   margin-right: 20px;
   background: none;
   border: 1px solid #fff;
   background: none;
-  color: #ffffff!important;
-transition: 0.35s;
-font-weight: 500;
+  color: #ffffff !important;
+  transition: 0.4s;
+  font-weight: 500;
 }
 
-.buttonGroup > input[type=button]:hover {
+.buttonGroup>input[type=button]:hover {
   background: #ffffff;
-  color: #7935CE!important;
+  color: #7935CE !important;
   font-weight: 400;
 }
