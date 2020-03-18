@@ -1,38 +1,112 @@
-.App {
+.main {
+  height: 100vh;
+    display: flex;
+    color: white;
+}
+.leftPanel {
+  width: 70%;
+ background-image: linear-gradient(
+      rgba(78, 24, 177,0.8),
+      rgba(78, 24, 177, 0.8)
+    ), url('./images/background.jpg');
+ background-repeat: no-repeat;
+   background-position: center center;
+
+}
+
+.leftPanel > .leftPanelContent {
+height: 300px;
+width: 80%;
+transform: translate(-50%, -50%);
+position: relative;
+top: 50%;
+left: 50%;
+}
+
+.leftPanel > .leftPanelContent > p{
+font-size: 60px;
+word-spacing: 10px;
+margin-bottom: 10px;
+}
+
+.rightPanel{
+  width: 30%;
+  background-color: #ffffff;
+  overflow: auto;
+}
+
+.rightContent{
+  width: 70%;
+  height: 70%;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.rightHeader {
+  width: 80%;
+  position: relative;
+  margin: auto;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.rightHeader > h4 {
+  font-weight: bold;
+  color: #7935CE;
+  font-size: 29px;
+  margin-bottom: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.rightHeader > p {
+  color: #cdccdc;
+}
+.rightBody > input[type=text]  {
+  width: 100%;
+  border-top-style: hidden;
+     border-right-style: hidden;
+     border-left-style: hidden;
+     border-bottom-style: groove;
+     background-color: #eee;
+  margin-top: 15px;
+  background: none;
+  padding: 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.rightBody > input[type=text]:focus {
+  outline: none;
+  border-bottom-color: #7935CE;
 }
 
-.App-link {
-  color: #61dafb;
+.rightBody > input[type=text]:focus::placeholder {
+  color: #7935CE;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.rightBody  > label {
+  color: black;
+}
+
+.rightBody  > label#termConditions {
+  font-weight: bold;
+  color: #7935CE;
+}
+.buttonGroup {
+  margin-top: 10px;
+}
+.buttonGroup > input[type=button] {
+  padding: 7px;
+  width: 150px;
+  margin-right: 20px;
+  background: none;
+  border: 1px solid #fff;
+  background: none;
+  color: #ffffff!important;
+transition: 0.35s;
+font-weight: 500;
+}
+
+.buttonGroup > input[type=button]:hover {
+  background: #ffffff;
+  color: #7935CE!important;
+  font-weight: 400;
 }
